@@ -24,4 +24,20 @@ RSpec.describe House do
         house.add_room(room_1)
         house.add_room(room_2) 
     end
+
+    xit "checks if house above market average" do
+
+    end
+
+    xit "checks room by category" do
+
+    end
+
+    xit "calulates house total area" do
+
+    end
+
+    xit "checks the details of the house" do 
+
+    end
 end 

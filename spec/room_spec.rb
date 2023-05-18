@@ -7,7 +7,7 @@ RSpec.describe Room do
       expect(room).to be_a Room
     end
 
-    xit "it has a category" do
+    it "it has a category" do
       room = Room.new(:bedroom, 10, '13')
 
       expect(room.category).to eq(:bedroom)
@@ -21,7 +21,7 @@ RSpec.describe Room do
       expect(room2.area).to eq(180)
     end
 
-    xit "checks painted status and paints rooms" do
+    it "checks painted status and paints rooms" do
       room1 = Room.new(:bedroom, 10, '13')
       room2 = Room.new(:living_room, 15, '12')
 
@@ -31,8 +31,6 @@ RSpec.describe Room do
       room2.paint 
       expect(room1.is_painted?).to eq(true)
       expect(room2.is_painted?).to eq(true)
-
-      
     end
   end
 end

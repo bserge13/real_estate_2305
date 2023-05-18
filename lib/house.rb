@@ -7,4 +7,8 @@ class House
         @address = address
         @rooms = []
     end
+
+    def price 
+        @price = price.to_i 
+    end
 end

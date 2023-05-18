@@ -8,7 +8,11 @@ class House
         @rooms = []
     end
 
-    def price 
-        @price = price.to_i 
+    # def price 
+    #     @price = price.to_i 
+    # end
+
+    def add_room(room)
+        @rooms << room 
     end
 end
